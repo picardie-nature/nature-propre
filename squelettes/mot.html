@@ -1,0 +1,38 @@
+<INCLURE{fond=entete}>
+<BOUCLEa(MOTS){id_mot}>
+<section id="mot" class="container">
+<div class="row">
+	<aside class="col-sm-4 col-sm-push-8">
+                <div class="widget search">
+                    <form role="form">
+                        <div class="input-group">
+                            <input type="text" placeholder="Rechercher" autocomplete="off" class="form-control">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-danger"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                </div><!--/.search-->
+
+                <div class="widget tags">
+                    <h3>Mots clés</h3>
+                    <ul class="tag-cloud">
+			    <BOUCLEb(MOTS){id_groupe=1}>
+			    	<a href="#URL_MOT" class="btn btn-xs btn-primary">#TITRE</a>
+			    </BOUCLEb>
+                    </ul>
+                </div><!--/.tags-->
+        </aside> 
+	<div class="col-sm-8 col-sm-pull-4">
+                <div class="blog">
+                    <div class="blog-item">
+                        <div class="blog-content">
+                            <h3>#TITRE</h3>
+			</div>
+		    </div>
+		</div>
+	</div>
+</div>
+</section>
+</BOUCLEa>
+<INCLURE{fond=pied}>

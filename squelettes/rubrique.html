@@ -1,0 +1,22 @@
+<INCLURE{fond=entete}>
+<BOUCLEa(RUBRIQUES){id_rubrique}>
+<section id="rubrique" class="container">
+	<div class="center">
+		<h1>#TITRE</h1>
+		#DESCRIPTIF
+		<hr/>
+	</div>
+	#TEXTE
+	<div class="row">
+		<BOUCLEb(ARTICLES){id_rubrique}>
+		<div class="col-sm-4">
+			<h4><a href="#URL_ARTICLE">#TITRE</a></h4>
+			<a href="#URL_ARTICLE">#DESCRIPTIF</a>
+			<div class="center"><a href="#URL_ARTICLE" class="btn btn-info">Lire</a></div>
+		</div>
+		</BOUCLEb>
+		</div>
+
+</section>
+</BOUCLEa>
+<INCLURE{fond=pied}>
