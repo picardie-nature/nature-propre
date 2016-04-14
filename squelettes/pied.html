@@ -2,13 +2,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
-                    <h4>About Us</h4>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
-                    <p>Pellentesque habitant morbi tristique senectus.</p>
+		    <BOUCLEa(ARTICLES){id_article=11}>
+		    <h4>#TITRE</h4>
+		    #TEXTE
+		    </BOUCLEa>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
-                    <h4>Company</h4>
+                    <h4>Nous suivre</h4>
                     <div>
                         <ul class="arrow">
                             <li><a href="spip.php?page=backend"><i class="fa fa-rss"></i> RSS</a></li>
@@ -17,7 +18,14 @@
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
-                    <h4>Latest Blog</h4>
+		<h4>Dernières nouvelles</h4>
+ 		<div>
+                   <ul class="arrow">
+		      <BOUCLEb(ARTICLES){id_rubrique=2}{par date}{inverse}{0,5}>
+		         <li><a href="#URL_ARTICLE">#TITRE</a></li>
+		      </BOUCLEb>
+		   </ul>
+		</div>
                 </div><!--/.col-md-3-->
 
                 <div class="col-md-3 col-sm-6">
@@ -25,9 +33,11 @@
                     <address>
                         <strong>Picardie Nature</strong><br>
                         1 rue de Croÿ<br>
+			BP 70010<br/>
                         80090 Amiens<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                        <abbr title="Téléphone">Tel:</abbr> 03.62.72.22.50
                     </address>
+		    <!--
                     <h4>Newsletter</h4>
                     <form role="form">
                         <div class="input-group">
@@ -37,6 +47,7 @@
                             </span>
                         </div>
                     </form>
+		    -->
                 </div> <!--/.col-md-3-->
             </div>
         </div>
