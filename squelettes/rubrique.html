@@ -30,9 +30,10 @@
 		<div class="break[(#COMPTEUR_BOUCLE|moins{1}|modulo{3})]"></div>
 		</BOUCLEb>
 		<div style="clear:both;"></div>
-		<Bd>
+		<BOUCLEdd(RUBRIQUES){si #ID_RUBRIQUE|=={2}}{id_rubrique}>
 		<div class="center"><h1>Revue de presse</h1></div>
 		<hr/>
+		</BOUCLEdd>
 		<BOUCLEd(SYNDIC_ARTICLES){id_rubrique}>
 		<div class="col-sm-4 ">
 			<div class="boite">
