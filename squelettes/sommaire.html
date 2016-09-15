@@ -1,18 +1,28 @@
 <INCLURE{fond=entete}>
 <section id="sommaire" class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-5">
 		<BOUCLEa(ARTICLES){id_article=1}>
 		<h2><a href="spip.php?rubrique1">#TITRE</a></h2>
                 #TEXTE
 		</BOUCLEa>
             </div><!--/.col-sm-6-->
-            <div class="col-sm-6">
+            <div class="col-sm-5">
 		<BOUCLEb(ARTICLES){id_article=2}>
 		<h2><a href="http://v2.clicnat.fr/?page=proteger_decharges_sauvage">#TITRE</a></h2>
                 #TEXTE
 		</BOUCLEb>
             </div><!--/.col-sm-6-->
+	    <div class="col-sm-2">
+	    	<h3>Nouvelles</h3>
+		<BOUCLEnews(ARTICLES){id_rubrique=2}>
+			<div>
+				&gt; <a href="#URL_ARTICLE">#TITRE</a>
+				<br/><small><i>publié le [(#DATE|affdate{"d-m-Y"})]</i></small>
+				<hr/>
+			</div>
+		</BOUCLEnews>
+	    </div>
         </div><!--/.row-->
 </section>
 <INCLURE{fond=pied}>
